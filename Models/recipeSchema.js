@@ -13,7 +13,11 @@ const recipeSchema = mongoose.Schema({
     }
 })
 
-const recipes = mongoose.model;("recipes",recipeSchema)
+const recipes = mongoose.model("recipes",recipeSchema)
 
 export default recipes;
+
+
+
+
 

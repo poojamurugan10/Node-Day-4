@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import connectDB from "./Database/dbConfig.js";
+import recipeRoute from "./Routers/recipeRouter.js"
 
 dotenv.config();
 
@@ -12,9 +13,13 @@ app.use(cors());
 
 connectDB();
 
+
+
 app.get("/", (req,res)=>{
     res.status(200).send("Welcome To Our Backend");
 });
+
+app.use("/api.recipes",recipeRoute)
 
 const port = process.env.PORT || 4000;
 
