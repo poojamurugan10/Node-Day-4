@@ -19,7 +19,7 @@ app.get("/", (req,res)=>{
     res.status(200).send("Welcome To Our Backend");
 });
 
-app.use("/api.recipes",recipeRoute)
+app.use("/api/recipes",recipeRoute)
 
 const port = process.env.PORT || 4000;
 

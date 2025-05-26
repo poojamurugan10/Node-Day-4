@@ -5,7 +5,7 @@ const recipeSchema = mongoose.Schema({
     name:{
         type: String,
         required: true,
-        unique: true,
+        unique: false,
     },
     price:{
         type: Number,
