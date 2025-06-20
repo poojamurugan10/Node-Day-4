@@ -10,7 +10,22 @@ const recipeSchema = mongoose.Schema({
     price:{
         type: Number,
         required: true,
-    }
+    },
+    ingredients:{
+        type: Array,
+    },
+    instructions:{
+        type: String,
+    },
+    cookingTime:{
+        type: Number,
+    },
+    difficulty:{
+        type: String,
+    },
+    price:{
+        type: String,
+    },
 })
 
 const recipes = mongoose.model("recipes",recipeSchema)

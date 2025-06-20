@@ -47,10 +47,10 @@ export const getRecipeById = async (req, res) => {
 export const updateRecipe = async (req,res)=>{
     try {
         const recipeId = req.params.id;
-        const {name,price}= req.body;
+        const {name,title,ingredients,instructions,cookingTime,difficulty,price}= req.body;
         const result = await recipes.findByIdAndUpdate(
            {_id:recipeId},
-           {name,price},
+           {name,title,ingredients,instructions,cookingTime,difficulty,price},
            {new:true},
         );
         if(result.matchedCount ===0){
