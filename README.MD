@@ -23,7 +23,8 @@ PUT	    /recipes/:id	   Update a recipe by ID
 DELETE	/recipes/:id	   Delete a recipe by ID
 
 Postman Documentation url:
-https://documenter.getpostman.com/view/45005245/2sB2qdeymM
+https://documenter.getpostman.com/view/45005245/2sB2xBDVcy
+
 
 👩‍🍳 Happy Cooking & Coding!
 Feel free to contribute or raise issues for bugs, improvements, or new features. Pull requests are welcome!
